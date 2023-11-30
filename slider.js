@@ -1,0 +1,17 @@
+const popup = document.querySelector('.popup');
+        const x = document.querySelector('.popup-content h1')
+
+        window.addEventListener('load', () => {
+            popup.classList.add('showPopup');
+            popup.childNodes[1].classList.add('showPopup');
+        })
+        x.addEventListener('click', () => {
+            popup.classList.remove('showPopup');
+            popup.childNodes[1].classList.remove('showPopup');
+        })
+
+        // =====================================
+        function show(){
+            document.querySelector('.hamburger').classList.toggle('open')
+            document.querySelector('.navigation').classList.toggle('active')
+        }
